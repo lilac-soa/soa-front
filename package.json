@@ -7,13 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "prettier --write \"**/*.{ts,tsx}\"",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "next": "14.2.14",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.5.3"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.9.0",
@@ -31,7 +36,9 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.14",
     "eslint-plugin-storybook": "^0.9.0",
+    "husky": "^9.1.6",
     "postcss": "^8",
+    "prettier": "^3.3.3",
     "storybook": "^8.3.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
